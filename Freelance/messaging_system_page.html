@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging - Freelance Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Freelance Platform Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse-jobs.html">Browse Jobs</a></li>
+                    <li><a href="find-freelancers.html">Find Freelancers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dashboard-client.html">Dashboard</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Messaging Section -->
+    <section class="messaging">
+        <div class="container">
+            <h1>Messages</h1>
+            <div class="message-list">
+                <div class="message-item received">
+                    <div class="message-content">
+                        <p>Hello, I'm interested in your proposal for the website redesign project.</p>
+                        <span class="message-time">10:30 AM</span>
+                    </div>
+                </div>
+                <div class="message-item sent">
+                    <div class="message-content">
+                        <p>Great! Could you please provide more details about your requirements?</p>
+                        <span class="message-time">10:35 AM</span>
+                    </div>
+                </div>
+                <!-- Add more messages as needed -->
+            </div>
+            <!-- Message Input Form -->
+            <form id="message-form" action="#" method="POST">
+                <textarea id="message-text" name="message-text" placeholder="Type your message..." rows="3" required></textarea>
+                <button type="submit" class="btn-main">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Freelance Platform. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* Global Reset and Styling */
+* {
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  font-family: "Poppins", sans-serif; /* Set default font family to Poppins */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  scroll-behavior: smooth; /* Smooth scrolling behavior */
+  scroll-padding-top: 2rem; /* Adjust padding when scrolling */
+  list-style: none; /* Remove default list styles */
+  text-decoration: none; /* Remove default text decoration */
+}
+
+:root {
+  --main-color: #ec1e03; /* Main color variable */
+  --text-color: #14131a; /* Text color variable */
+  --bg-color: #ffffff96; /* Background color variable */
+  
+  --big-font: 4rem; /* Variable for large font size */
+  --h2-font: 2.24rem; /* Variable for h2 font size */
+  --p-font: 0.9rem; /* Variable for paragraph font size */
+}
+
+/* Logo Styles */
+.logo {
+  font-size: 1.2rem; /* Logo font size */
+  font-weight: 600; /* Logo font weight */
+  color: var(--main-color); /* Logo color */
+}

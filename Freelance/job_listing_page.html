@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings - Freelance Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Freelance Platform Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse-jobs.html">Browse Jobs</a></li>
+                    <li><a href="find-freelancers.html">Find Freelancers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dashboard-freelancer.html">Dashboard</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Job Listings Section -->
+    <section class="job-listings">
+        <div class="container">
+            <h1>Job Listings</h1>
+            <div class="filter-bar">
+                <form action="search_jobs.php" method="GET">
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option value="">All Categories</option>
+                        <option value="design">Design</option>
+                        <option value="development">Development</option>
+                        <option value="writing">Writing</option>
+                        <option value="marketing">Marketing</option>
+                        <!-- Add more categories as needed -->
+                    </select>
+
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" placeholder="Enter location">
+
+                    <label for="keywords">Keywords:</label>
+                    <input type="text" id="keywords" name="keywords" placeholder="Enter keywords">
+
+                    <button type="submit" class="btn-main">Search</button>
+                </form>
+            </div>
+
+            <div class="job-list">
+                <div class="job-item">
+                    <h2><a href="job-detail.html">Website Redesign</a></h2>
+                    <p><strong>Category:</strong> Design</p>
+                    <p><strong>Budget:</strong> $500 - $1000</p>
+                    <p><strong>Deadline:</strong> June 30, 2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae eros et velit varius efficitur.</p>
+                </div>
+                <div class="job-item">
+                    <h2><a href="job-detail.html">Logo Design</a></h2>
+                    <p><strong>Category:</strong> Design</p>
+                    <p><strong>Budget:</strong> $100 - $300</p>
+                    <p><strong>Deadline:</strong> June 20, 2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae eros et velit varius efficitur.</p>
+                </div>
+                <div class="job-item">
+                    <h2><a href="job-detail.html">SEO Optimization</a></h2>
+                    <p><strong>Category:</strong> Marketing</p>
+                    <p><strong>Budget:</strong> $300 - $600</p>
+                    <p><strong>Deadline:</strong> June 25, 2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae eros et velit varius efficitur.</p>
+                </div>
+                <!-- Add more job items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Freelance Platform. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>

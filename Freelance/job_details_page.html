@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details - Freelance Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Freelance Platform Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse-jobs.html">Browse Jobs</a></li>
+                    <li><a href="find-freelancers.html">Find Freelancers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dashboard-freelancer.html">Dashboard</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Job Details Section -->
+    <section class="job-details">
+        <div class="container">
+            <h1>Website Redesign</h1>
+            <div class="job-info">
+                <p><strong>Category:</strong> Design</p>
+                <p><strong>Budget:</strong> $500 - $1000</p>
+                <p><strong>Deadline:</strong> June 30, 2024</p>
+                <p><strong>Posted by:</strong> John Doe</p>
+            </div>
+            <div class="job-description">
+                <h2>Job Description</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae eros et velit varius efficitur. Donec et nisi nec lorem vulputate luctus. Integer et urna non nunc cursus fermentum. Sed in orci a libero ultricies vestibulum. Nullam auctor nisi eget nulla ultrices, at viverra nisl malesuada. Vivamus tempor dolor eu arcu viverra, in efficitur nisi bibendum.</p>
+                <p>Mauris quis turpis venenatis, efficitur magna at, posuere lorem. Integer nec tortor id arcu convallis sagittis. Vestibulum a nunc at nisi venenatis condimentum. In non lacus non turpis fermentum vehicula. Duis tincidunt felis at augue pretium, ac auctor lectus venenatis. Nam et lorem quis mauris interdum facilisis. Donec ut orci ac urna efficitur euismod at at sapien. Sed aliquet odio ac justo fermentum, vitae consectetur ligula scelerisque.</p>
+            </div>
+            <div class="apply-job">
+                <h2>Apply for this Job</h2>
+                <form action="apply_job_process.php" method="POST">
+                    <label for="proposal">Your Proposal</label>
+                    <textarea id="proposal" name="proposal" rows="5" required></textarea>
+
+                    <label for="budget">Your Budget ($)</label>
+                    <input type="number" id="budget" name="budget" required>
+
+                    <label for="deadline">Estimated Deadline</label>
+                    <input type="date" id="deadline" name="deadline" required>
+
+                    <button type="submit" class="btn-main">Submit Proposal</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Freelance Platform. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,483 @@
+/* Google Fonts Import and Global Styles */
+
+/* Import Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Global Reset and Styling */
+* {
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  font-family: "Poppins", sans-serif; /* Set default font family to Poppins */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  scroll-behavior: smooth; /* Smooth scrolling behavior */
+  scroll-padding-top: 2rem; /* Adjust padding when scrolling */
+  list-style: none; /* Remove default list styles */
+  text-decoration: none; /* Remove default text decoration */
+}
+
+/* Text Selection Styles */
+*::selection {
+  background: var(--main-color); /* Background color on text selection */
+  color: #fff; /* Text color on text selection */
+}
+
+/* Root Variables */
+:root {
+  --main-color: #ec1e03; /* Main color variable */
+  --text-color: #14131a; /* Text color variable */
+  --bg-color: #ffffff96; /* Background color variable */
+  
+  --big-font: 4rem; /* Variable for large font size */
+  --h2-font: 2.24rem; /* Variable for h2 font size */
+  --p-font: 0.9rem; /* Variable for paragraph font size */
+}
+
+/* Section Styles */
+section {
+  padding: 50px 10%; /* Padding for sections */
+}
+
+/* Active Body Styles */
+body.active {
+  --bg-color: #1e1c2a; /* Change background color when body has active class */
+  --text-color: #fff; /* Change text color when body has active class */
+}
+
+/* Body Styles */
+body {
+  color: var(--text-color); /* Set text color */
+  background: var(--bg-color); /* Set background color */
+}
+
+/* Dark Mode Toggle Styles */
+#darkmode {
+  font-size: 25px; /* Toggle icon font size */
+  cursor: pointer; /* Add pointer cursor */
+}
+
+/* Header Styles */
+header {
+  position: fixed; /* Fix header position */
+  width: 100%; /* Full width */
+  top: 0; /* Align to top */
+  right: 0; /* Align to right */
+  z-index: 1000; /* Set z-index for stacking */
+  display: flex; /* Flex layout */
+  align-items: center; /* Center align items vertically */
+  justify-content: space-between; /* Space between items */
+  background: var(--bg-color); /* Set background color */
+  padding: 18px 100px; /* Padding for header */
+  box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Logo Styles */
+.logo {
+  font-size: 1.2rem; /* Logo font size */
+  font-weight: 600; /* Logo font weight */
+  color: var(--main-color); /* Logo color */
+}
+
+
+/* Navbar Styles */
+.navbar {
+  display: flex; /* Flex layout for navbar */
+}
+
+/* Navbar Link Styles */
+.navbar a {
+  font-size: 1rem; /* Link font size */
+  padding: 10px 20px; /* Link padding */
+  color: var(--text-color); /* Link text color */
+  font-weight: 500; /* Link font weight */
+}
+
+/* Navbar Link Hover Styles */
+.navbar a.active {
+  color: var(--main-color); /* Link hover color */
+}
+.navbar a:hover {
+  color: var(--main-color); /* Change color on hover */
+}
+
+/* Menu Icon Styles */
+#menu-icon {
+  font-size: 2rem; /* Menu icon font size */
+  cursor: pointer; /* Add pointer cursor */
+  display: none; /* Hide initially */
+}
+
+/* Home Section Styles */
+.home {
+  width: 100%; /* Full width */
+  min-height: 100vh; /* Minimum height */
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+  align-items: center; /* Center align items vertically */
+  gap: 1.5rem; /* Gap between grid items */
+}
+
+/* Home Image Styles */
+.home-img img {
+  width: 100%; /* Full width */
+}
+
+/* Home Text Styles */
+.home-text h1 {
+  font-size: var(--big-font); /* Large font size */
+  color: var(--main-color); /* Main color */
+}
+
+.home-text h2 {
+  font-size: var(--h2-font); /* h2 font size */
+  margin: 1rem 0 1rem; /* Margin for h2 */
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block; /* Inline-block element */
+  background: var(--main-color); /* Main color background */
+  padding: 10px 20px; /* Padding */
+  border-radius: 0.5rem; /* Border radius */
+  color: #fff; /* Text color */
+}
+
+.btn:hover {
+  background: #ffa400; /* Background color on hover */
+}
+
+/* About Section Styles */
+.about {
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+  gap: 1.5rem; /* Gap between grid items */
+  align-items: center; /* Center align items vertically */
+}
+
+/* About Image Styles */
+.about-img img {
+  max-width: 80%; /* Maximum width */
+  border-radius: 0.5rem; /* Border radius */
+}
+
+/* About Text Styles */
+.about-text span {
+  color: var(--main-color); /* Main color for span */
+  font-weight: 500; /* Font weight */
+}
+
+.about-text h2 {
+  font-size: var(--h2-font); /* h2 font size */
+}
+
+.about-text p {
+  margin: 0.8rem 0 1.8rem; /* Margin for paragraphs */
+}
+
+/* Heading Styles */
+.heading {
+  text-align: center; /* Center align text */
+}
+
+.heading span {
+  color: var(--main-color); /* Main color for span */
+  font-weight: 500; /* Font weight */
+}
+
+.heading h2 {
+  font-size: var(--h2-font); /* h2 font size */
+}
+
+
+/* Menu Container Styles */
+.menu-container {
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto)); /* Responsive grid layout */
+  gap: 1.5rem; /* Gap between grid items */
+  align-items: center; /* Center align items vertically */
+}
+
+/*Team container*/
+.team-container {
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto)); /* Responsive grid layout */
+  gap: 1.5rem; /* Gap between grid items */
+  align-items: center; /* Center align items vertically */
+}
+
+.team-container .profile {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items horizontally */
+  border: 1px solid #ddd; /* Example border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example box shadow */
+  padding: 10px; /* Optional padding */
+}
+
+.team-container .profile img {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+@media screen and (max-width: 768px) {
+  .team-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto)); /* Adjust column width for smaller screens */
+    gap: 1rem; /* Reduce gap for smaller screens */
+  }
+}
+
+/* Box Styles */
+.box {
+  position: relative; /* Relative positioning */
+  margin-top: 2rem; /* Top margin */
+  height: auto; /* Auto height */
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Column layout */
+  justify-content: center; /* Center align content vertically */
+  align-items: center; /* Center align items horizontally */
+  border-radius: 0.5rem; /* Border radius */
+  box-shadow: 0 2px 4px rgb(4 64 54 / 10%); /* Box shadow */
+  padding: 10px; /* Padding */
+}
+
+/* Box Image Styles */
+.box-img {
+  width: 250px; /* Image width */
+  height: 250px; /* Image height */
+}
+
+.box-img img {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: contain; /* Preserve aspect ratio */
+  object-position: center; /* Center image */
+}
+
+/* Box Heading Styles */
+.box h2 {
+  font-size: 1.2rem; /* Heading font size */
+}
+
+/* Box Subheading Styles */
+.box h3 {
+  font-size: 1rem; /* Subheading font size */
+  font-weight: 400; /* Subheading font weight */
+  margin: 4px 0 10px; /* Margin */
+}
+
+/* Box Text Styles */
+.box span {
+  font-size: var(--p-font); /* Text font size */
+  font-weight: 500; /* Text font weight */
+}
+
+/* Box Icon Styles */
+.box .bx {
+  position: absolute; /* Absolute positioning */
+  right: 0; /* Align to right */
+  top: 0; /* Align to top */
+  font-size: 20px; /* Icon font size */
+  background: var(--main-color); /* Main color background */
+  border-radius: 0 0.5rem 0 0.5rem; /* Border radius */
+  padding: 5px 8px; /* Padding */
+}
+
+.box .bx:hover {
+  background: #ffa400; /* Background color on hover */
+}
+
+/* Services Container Styles */
+.servives-container {
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto)); /* Responsive grid layout */
+  gap: 1.5rem; /* Gap between grid items */
+  margin-top: 2rem; /* Top margin */
+}
+
+/* Service Box Styles */
+.s-box {
+  text-align: center; /* Center align text */
+}
+
+/* Service Box Image Styles */
+.s-box img {
+  width: 60px; /* Image width */
+}
+
+/* Service Box Heading Styles */
+.s-box h3 {
+  margin: 4px 0 10px; /* Margin */
+}
+
+
+/* Connect Section Styles */
+.connect {
+  display: flex; /* Flex layout */
+  align-items: center; /* Center align items vertically */
+  justify-content: space-around; /* Space around items */
+}
+
+/* Connect Text Styles */
+.connect-text span {
+  color: var(--main-color); /* Main color for span */
+  font-weight: 500; /* Font weight */
+}
+
+.connect-text h2 {
+  font-size: var(--h2-font); /* h2 font size */
+}
+
+/* Contact Section Styles */
+.contact {
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto)); /* Responsive grid layout */
+  gap: 1.5rem; /* Gap between grid items */
+}
+
+/* Contact Box Heading Styles */
+.contact-box h3 {
+  margin-bottom: 1rem; /* Bottom margin */
+}
+
+/* Social Media Icons Styles */
+.social {
+  display: flex; /* Flex layout */
+  margin-top: 1.5rem; /* Top margin */
+}
+
+.social i {
+  font-size: 20px; /* Icon font size */
+  margin-right: 1rem; /* Right margin */
+  color: var(--text-color); /* Text color */
+}
+
+.social i:hover {
+  color: var(--main-color); /* Main color on hover */
+}
+
+/* Contact Box Link Styles */
+.contact-box li a {
+  color: var(--text-color); /* Text color */
+}
+
+.contact-box li a:hover {
+  color: var(--main-color); /* Main color on hover */
+}
+
+/* Address Styles */
+.address {
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Column layout */
+}
+
+.address i {
+  margin-bottom: 0.5rem; /* Bottom margin */
+  font-size: 1rem; /* Font size */
+}
+
+.address span {
+  margin-left: 1rem; /* Left margin */
+}
+
+/* Copyright Styles */
+.copyright {
+  padding: 20px; /* Padding */
+  text-align: center; /* Center align text */
+}
+
+/* Media Queries */
+@media (max-width: 921px) {
+  header {
+    padding: 14px 41px; /* Padding */
+  }
+  :root {
+    --big-font: 3rem; /* Large font size */
+    --h2-font: 1.7rem; /* h2 font size */
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 8%; /* Padding */
+  }
+  #menu-icon {
+    display: initial; /* Display initially */
+    color: var(--text-color); /* Text color */
+  }
+  header .navbar {
+    position: absolute; /* Absolute positioning */
+    top: -400px; /* Move out of the screen */
+    left: 0; /* Align to left */
+    right: 0; /* Align to right */
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Column layout */
+    text-align: center; /* Center align text */
+    background: var(--bg-color); /* Background color */
+    box-shadow: 0 4px 4px rgb(0 0 0 / 10%); /* Box shadow */
+    transition: 0.2s ease; /* Transition effect */
+  }
+  .navbar.active {
+    top: 100%; /* Move to top */
+  }
+  .navbar a {
+    padding: 1.5rem; /* Padding */
+    display: block; /* Block display */
+    background: var(--bg-color); /* Background color */
+  }
+  #darkmode {
+    position: absolute; /* Absolute positioning */
+    top: 1.4rem; /* Top position */
+    right: 2rem; /* Right position */
+  }
+}
+
+@media (max-width: 715px) {
+  header {
+    padding: 10px 16px; /* Padding */
+  }
+  .home {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+  .about {
+    grid-template-columns: 1fr; /* Single column layout */
+    text-align: center; /* Center align text */
+  }
+  .about-img {
+    order: 2; /* Change order */
+  }
+}
+
+@media (max-width: 515px) {
+  .connect {
+    flex-direction: column; /* Column layout */
+  }
+  .connect .btn {
+    margin-top: 1rem; /* Top margin */
+  }
+}
+
+@media (max-width: 450px) {
+  :root {
+    --big-font: 2rem; /* Large font size */
+    --h2-font: 1.4rem; /* h2 font size */
+  }
+  .home-text {
+    padding-top: 4rem; /* Top padding */
+  }
+}
+
+
+/* Music Control Styles */
+.music-control {
+  display: flex; /* Flex layout */
+  align-items: center; /* Center align items vertically */
+  margin-left: auto; /* Auto margin on the left */
+}
+
+/* Music Control Icon Styles */
+.music-control i {
+  font-size: 20px; /* Icon font size */
+  color: var(--text-color); /* Use Header Text color */
+  margin-right: 10px; /* Right margin */
+}
+

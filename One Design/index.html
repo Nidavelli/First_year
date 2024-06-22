@@ -1,0 +1,78 @@
+<!-- HTML Document Structure -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pizza Pie</title>
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <a href="index.html" class="logo">Pizza Pie</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <!-- Background Music -->
+            <div class="music-control">
+                <i id="music-icon" class="bx bx-speaker"></i>
+                <audio id="backgroundMusic" src="music/Labrinth-Forever but only the begining.mp3" loop></audio>
+            </div>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- Dark Mode -->
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Pizza Taste</h1>
+            <h2>The tasty pizza of <br> your choice</h2>
+            <a href="menu.html" class="btn">View Menu</a>
+        </div>
+        <div class="home-img">
+            <img src="https://images.pexels.com/photos/10406184/pexels-photo-10406184.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        </div>
+    </section>
+    
+    <!-- Promo Video Section -->
+    <section class="connect">
+        <div class="connect-text">
+            <span>Promo</span>
+            <h2>Promo Video</h2>
+        </div>
+        <a href="about.html#Promovideos" class="btn">View</a>
+    </section>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link To JavaScript -->
+    <script src="script.js"></script>
+</body>
+<footer>
+    <!-- Footer Section -->
+    <marquee behavior="alternate" direction="left">
+        <section class="contact" id="contact">
+            <div class="contact-box">
+                <h3>Pizza Pie</h3>
+                <span>Connect With Us</span>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                </div>
+            </div>
+        </section>
+    </marquee>
+</footer>
+</html>
